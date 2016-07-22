@@ -390,8 +390,8 @@ static public class NGUITools
 			if (w != null)
 			{
 				Vector3[] corners = w.localCorners;
-#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
-				box.center = Vector3.Lerp(corners[0], corners[2], 0.5f);
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7
+                box.center = Vector3.Lerp(corners[0], corners[2], 0.5f);
 #else
 				box.offset = Vector3.Lerp(corners[0], corners[2], 0.5f);
 #endif
@@ -400,8 +400,8 @@ static public class NGUITools
 			else
 			{
 				Bounds b = NGUIMath.CalculateRelativeWidgetBounds(go.transform, considerInactive);
-#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
-				box.center = b.center;
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7
+                box.center = b.center;
 #else
 				box.offset = b.center;
 #endif

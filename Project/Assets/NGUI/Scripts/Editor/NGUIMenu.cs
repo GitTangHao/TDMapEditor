@@ -584,8 +584,8 @@ static public class NGUIMenu
 
 			BoxCollider2D bc = go.AddComponent<BoxCollider2D>();
 			bc.size = size;
-#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
-			bc.center = center;
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7
+            bc.center = center;
 #else
 			bc.offset = center;
 #endif
@@ -628,8 +628,8 @@ static public class NGUIMenu
 
 			cam.eventType = UICamera.EventType.UI_3D;
 
-#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6
-			Vector3 center = c.center;
+#if UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7
+            Vector3 center = c.center;
 #else
 			Vector3 center = c.offset;
 #endif
