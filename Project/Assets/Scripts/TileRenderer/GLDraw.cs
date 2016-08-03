@@ -23,7 +23,7 @@ public class GLDraw
     }
 
     public static void DrawTiledFrames(int a_startX, int a_startZ, int a_widthX, int a_widthZ, int a_tileSize, Color a_color)
-    {
+    {        
         if (a_widthX <= 0 || a_widthZ <= 0 || a_tileSize <= 0)
         {
             Debug.LogError("Invalid draw parameters.");

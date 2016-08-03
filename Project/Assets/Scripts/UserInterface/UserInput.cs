@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-[RequireComponent(typeof(Camera))]
+[RequireComponent(typeof(Camera)), DisallowMultipleComponent]
 public class UserInput : MonoBehaviour 
 {
 
@@ -92,7 +92,7 @@ public class UserInput : MonoBehaviour
         }
     }
 	
-	void OnPostRender () 
+	void OnPostRender ()
     {
         Ray tRay = mCamera.ScreenPointToRay(Input.mousePosition);
 

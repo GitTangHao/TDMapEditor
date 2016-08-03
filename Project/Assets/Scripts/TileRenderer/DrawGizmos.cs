@@ -5,13 +5,13 @@ public class DrawGizmos : MonoBehaviour
 {
     void Start()
     {
-        GLDraw.Init();
+     //   GLDraw.Init();
     }
 
     void OnPostRender()
     {
-        GLDraw.DrawSolidTiles(2, 1, 1, 1, 1, Color.red);
-        GLDraw.DrawTiledFrames(0, 0, 30, 30, 1, Color.green);
+        //GLDraw.DrawSolidTiles(0, 0, 1, 1, 1, Color.red);
+        //GLDraw.DrawTiledFrames(-50, -50, 100, 100, 1, Color.green);
     }
 
 }
